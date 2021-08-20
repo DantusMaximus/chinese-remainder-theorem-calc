@@ -33,12 +33,13 @@ namespace KinesiskaRestsatsen
             {
                 string[] values = new string[2];
                 string line;
+                int ai, ni;
                 // Read and display lines from the file until the end of
                 // the file is reached.
                 while ((line = sr.ReadLine()) != null)
                 {
-                    int ai = 0;
-                    int ni = 0;
+                    ai = 0;
+                    ni = 0;
                     values = line.Split(' ');
                     if (values.Length == 2)
                     {
