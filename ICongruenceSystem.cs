@@ -12,7 +12,7 @@ namespace KinesiskaRestsatsen{
             // bi ≡ (n/ni)^(phi.Phi(ni)-1) (mod ni)
             // enligt eulers sats:  a^(phi.Phi(n)) ≡ 1 (mod n)
             // om a och n är relativt prima
-            var bFactors = new List<int>();
+            var bFactors = new List<long>();
             long b;
             int e;
             //Decides sollutions bi for each congruence
@@ -25,7 +25,7 @@ namespace KinesiskaRestsatsen{
                 {
                     Reduce(ref b, ref e, N[i]);
                 }
-                foreach (int factor in bFactors)
+                foreach (long factor in bFactors)
                 {
                     b %= ProdN;
                     b *= factor;
@@ -45,7 +45,7 @@ namespace KinesiskaRestsatsen{
                 b %= ni;
                 if (e % 2 == 1)
                 {
-                    bFactors.Add((int)(b % ni));
+                    bFactors.Add((b % ni));
                     e--;
                     return;
                 }

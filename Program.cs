@@ -15,9 +15,9 @@ namespace KinesiskaRestsatsen
             while(!Input.Valid(userinput));
             ICongruenceSystem congruenceSystem;
             switch(userinput){
-                case 'y': congruenceSystem = new InputCongurenceSystem();
+                case '0': congruenceSystem = new InputCongurenceSystem();
                 break;
-                case 'X': congruenceSystem = new GeneratedCongruenceSystem();
+                case '1': congruenceSystem = new GeneratedCongruenceSystem();
                 break;
                 default: congruenceSystem = new GeneratedCongruenceSystem();
                 break;

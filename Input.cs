@@ -1,8 +1,8 @@
 namespace KinesiskaRestsatsen{
     static public class Input{
         static public bool Valid(char input){
-            if(input == 'y'){ return true;}
-            if(input == 'n'){ return true;}
+            if(input == '1'){ return true;}
+            if(input == '0'){ return true;}
             return false;
         }
     }

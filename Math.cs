@@ -5,7 +5,7 @@ namespace KinesiskaRestsatsen
 {
     static public class Math
     {
-        static private List<int> primes;
+        static public List<int> primes;
         static Math()
         {
             primes = new List<int>();
