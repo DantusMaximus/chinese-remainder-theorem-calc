@@ -18,7 +18,7 @@ namespace KinesiskaRestsatsen{
 
         public static void InvalidCongruence(int coeff, int ai, int ni)
         {
-            Console.WriteLine($"The Congruence  {coeff}x ≡ {ai}  mod({ni})  is not valid to the congruance system");
+            Console.WriteLine($"The Congruence  {coeff}x ≡ {ai}  mod({ni})  is not valid to the congruance system due to having multiple sollutions in the same modulus");
             Console.WriteLine();
         }
         public static void CouldNotGenerate(){
