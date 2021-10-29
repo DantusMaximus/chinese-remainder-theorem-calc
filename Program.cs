@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Numerics;
+
 namespace KinesiskaRestsatsen
 {
     class Program
@@ -7,21 +9,7 @@ namespace KinesiskaRestsatsen
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            char userinput;
-            do{
-                Print.Prompt();
-                userinput = (char)Console.Read();
-            }
-            while(!Input.Valid(userinput));
-            ICongruenceSystem congruenceSystem;
-            switch(userinput){
-                case '0': congruenceSystem = new InputCongurenceSystem();
-                break;
-                case '1': congruenceSystem = new GeneratedCongruenceSystem();
-                break;
-                default: congruenceSystem = new GeneratedCongruenceSystem();
-                break;
-            }
+            ICongruenceSystem congruenceSystem = Read.CoungruenceSystem();
             congruenceSystem.SolveCongruenceSystem();
         }
         

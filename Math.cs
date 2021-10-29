@@ -1,6 +1,7 @@
 using System.IO;
 using System;
 using System.Collections.Generic;
+using Fractions;
 namespace KinesiskaRestsatsen
 {
     static public class Math
@@ -56,6 +57,13 @@ namespace KinesiskaRestsatsen
                 b = rest;
             }
             return 1;
+        }
+        public static Fraction PowMod(Fraction b, Fraction e, int ni){
+            while(e >= 0){
+                b *= b %ni;
+                e-= 1;
+            }
+            return b;
         }
     }
 }
