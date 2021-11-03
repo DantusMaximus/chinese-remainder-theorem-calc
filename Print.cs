@@ -12,7 +12,7 @@ namespace KinesiskaRestsatsen{
             Console.Clear();
             Console.WriteLine("Please enter the max value of any conruence modulus and the total amount of congruences in the system");
         }
-        static public void Results(List<int> a, List<int> n, Fraction prodN, string sollution){
+        static public void Results(List<int> a, List<int> n, Fraction prodN, Fraction sollution){
             if(prodN ==1){return;}
             Console.Clear();
             Console.WriteLine("The Congruence System");

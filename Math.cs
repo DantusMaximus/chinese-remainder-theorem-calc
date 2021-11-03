@@ -59,11 +59,13 @@ namespace KinesiskaRestsatsen
             return 1;
         }
         public static Fraction PowMod(Fraction b, Fraction e, int ni){
-            while(e >= 0){
-                b *= b %ni;
+            Fraction result = 1;
+            while(e > 0){
+                result *= b;
+                result %= ni;
                 e-= 1;
             }
-            return b;
+            return result;
         }
     }
 }

@@ -12,8 +12,8 @@ namespace KinesiskaRestsatsen{
             // om bi(n/ni) ≡ 1 (mod ni) får vi en lösning när vi multiplicerar med ai, vilket ger oss
             // bi ≡ (n/ni)^(phi.Phi(ni)-1) (mod ni)         ty         bi ≡ (n/ni)^-1 (mod ni)          och         (n/ni)^(phi.Phi(ni)) ≡ 1 (mod ni)
             var bFactors = new List<Fraction>();
-            Fraction b;
-            Fraction e;
+            Fraction b = 0;
+            Fraction e = 0;
             //Decides sollutions bi for each congruence
             for (int i = 0; i < Congruences; i++)
             {
@@ -22,14 +22,15 @@ namespace KinesiskaRestsatsen{
                 e = Math.Phi(N[i]) - 1;
                 while (e > 1)
                 {
-                    Reduce(ref b, ref e, N[i]);
+                     Reduce(ref b, ref e, N[i]);
                 }
-                foreach (long factor in bFactors)
+                foreach (Fraction factor in bFactors)
                 {
-                    b %= ProdN;
                     b *= factor;
+                    b %= N[i];
                 }
-                B.Add((int)(b % N[i]));
+                b %= N[i];
+                B.Add((int)b);
             }
             //Calculates answear modulo ProdN
             Fraction answear = 0;
@@ -39,7 +40,8 @@ namespace KinesiskaRestsatsen{
                 answear %= ProdN;
             }
             if(answear < 0){ answear += ProdN;}
-            Print.Results(A, N, ProdN, (answear % ProdN).ToString());
+            Print.Results(A, N, ProdN, answear);
+            
             void Reduce(ref Fraction b, ref Fraction e, int ni)
             {
                 b %= ni;
@@ -47,15 +49,12 @@ namespace KinesiskaRestsatsen{
                 {
                     bFactors.Add((b % ni));
                     e-=1;
-                    return;
                 }
-                if (e > 2)
+                if (e >= 2)
                 {
-                    bFactors.Add((int)(Math.PowMod(b, e / 2, ni) % ni));
+                    bFactors.Add((Math.PowMod(b, e / 2, ni)) % ni);
                     e /= 2;
                 }
-                bFactors.Add((int)b);
-                e-=1;
             }
         }
     }
