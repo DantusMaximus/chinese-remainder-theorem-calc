@@ -1,9 +1,9 @@
 using System.Collections.Generic;
-using Fractions;
+using System.Numerics;
 namespace KinesiskaRestsatsen{
     interface ICongruenceSystem{
         int Congruences { get; set; }
-        Fraction ProdN { get; set; }
+        BigInteger ProdN { get; set; }
         List<int> A { get; set;}
         List<int> B { get; set;}
         List<int> N { get; set;}
@@ -11,9 +11,9 @@ namespace KinesiskaRestsatsen{
         {
             // om bi(n/ni) ≡ 1 (mod ni) får vi en lösning när vi multiplicerar med ai, vilket ger oss
             // bi ≡ (n/ni)^(phi.Phi(ni)-1) (mod ni)         ty         bi ≡ (n/ni)^-1 (mod ni)          och         (n/ni)^(phi.Phi(ni)) ≡ 1 (mod ni)
-            var bFactors = new List<Fraction>();
-            Fraction b = 0;
-            Fraction e = 0;
+            var bFactors = new List<BigInteger>();
+            BigInteger b = 0;
+            BigInteger e = 0;
             //Decides sollutions bi for each congruence
             for (int i = 0; i < Congruences; i++)
             {
@@ -24,7 +24,7 @@ namespace KinesiskaRestsatsen{
                 {
                      Reduce(ref b, ref e, N[i]);
                 }
-                foreach (Fraction factor in bFactors)
+                foreach (BigInteger factor in bFactors)
                 {
                     b *= factor;
                     b %= N[i];
@@ -33,7 +33,7 @@ namespace KinesiskaRestsatsen{
                 B.Add((int)b);
             }
             //Calculates answear modulo ProdN
-            Fraction answear = 0;
+            BigInteger answear = 0;
             for (int i = 0; i < Congruences; i++)
             {
                 answear += A[i] * B[i] * (ProdN / N[i]);
@@ -42,7 +42,7 @@ namespace KinesiskaRestsatsen{
             if(answear < 0){ answear += ProdN;}
             Print.Results(A, N, ProdN, answear);
             
-            void Reduce(ref Fraction b, ref Fraction e, int ni)
+            void Reduce(ref BigInteger b, ref BigInteger e, int ni)
             {
                 b %= ni;
                 if (e % 2 == 1)

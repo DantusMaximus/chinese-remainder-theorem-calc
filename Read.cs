@@ -2,6 +2,7 @@ using KinesiskaRestsatsen;
 using System.IO;
 using System.Collections.Generic;
 using System;
+using System.Numerics;
 
 class Read
 {
@@ -48,12 +49,12 @@ class Read
         return true;
     }
 
-    public static (List<int>, List<int>, List<int>, Fractions.Fraction) ArgumentsFromFile()
+    public static (List<int>, List<int>, List<int>, BigInteger) ArgumentsFromFile()
     {
         var A = new List<int>();
         var B = new List<int>();
         var N = new List<int>();
-        var ProdN = new Fractions.Fraction();
+        var ProdN = new BigInteger();
         ProdN = 1;
         using (StreamReader sr = new StreamReader("CongruenceSystem.txt"))
         {

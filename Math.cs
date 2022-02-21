@@ -1,7 +1,7 @@
 using System.IO;
 using System;
 using System.Collections.Generic;
-using Fractions;
+using System.Numerics;
 namespace KinesiskaRestsatsen
 {
     static public class Math
@@ -58,8 +58,8 @@ namespace KinesiskaRestsatsen
             }
             return 1;
         }
-        public static Fraction PowMod(Fraction b, Fraction e, int ni){
-            Fraction result = 1;
+        public static BigInteger PowMod(BigInteger b, BigInteger e, int ni){
+            BigInteger result = 1;
             while(e > 0){
                 result *= b;
                 result %= ni;

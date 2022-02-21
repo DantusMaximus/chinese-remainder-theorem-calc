@@ -1,13 +1,13 @@
 using System;
 using System.Collections.Generic;
-using Fractions;
+using System.Numerics;
 namespace KinesiskaRestsatsen
 {
     public class GeneratedCongruenceSystem : ICongruenceSystem
     {
         public int MaxValue { get; set; }
         public int Congruences { get; set; }
-        public Fraction ProdN { get; set; }
+        public BigInteger ProdN { get; set; }
         public List<int> A { get; set; }
         public List<int> B { get; set; }
         public List<int> N { get; set; }
