@@ -26,17 +26,19 @@ class Read
     public static (int, int) GenerationArguments()
     {
         string maxVal, congCount;
+        int biggestPrime = MetaData.PrimesUpperbound();
+        //int biggestPrime = MetaData.PrimesUpperbound();
         do
         {
-            Print.PromptGenSpec();
-            maxVal = System.Console.ReadLine().Split("\n")[0];
+            Print.PromptGenSpec(biggestPrime);
+            maxVal = System.Console.ReadLine().Trim();
             congCount = System.Console.ReadLine();
         }
-        while (!Read.ValidInteger(maxVal, 2) || !Read.ValidInteger(congCount, 1));
+        while (!Read.ValidInteger(maxVal, biggestPrime, 'u') || !Read.ValidInteger(congCount, 1, 'l'));
         return (int.Parse(maxVal), int.Parse(congCount));
     }
 
-    private static bool ValidInteger(string val, int min)
+    private static bool ValidInteger(string val, int bound, char mode)
     {
         int r = 0;
         try
@@ -45,8 +47,11 @@ class Read
         }
         catch { return false; }
 
-        if (r < min) { return false; }
-        return true;
+        switch(mode){
+            case 'u': if (r <= bound) { return true; } break;
+            case 'l': if (r >= bound) { return true; } break;
+        }
+        return false;
     }
 
     public static (List<int>, List<int>, List<int>, BigInteger) ArgumentsFromFile()

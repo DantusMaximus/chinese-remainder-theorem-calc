@@ -8,9 +8,9 @@ namespace KinesiskaRestsatsen{
             Console.WriteLine("Do you want to solve the congruence system that is specified in the file \"CongruenceSystem.txt\"[0] or do you want to solve a generated one[1]?");
         }
 
-        public static void PromptGenSpec(){
+        public static void PromptGenSpec(int maxVal){
             Console.Clear();
-            Console.WriteLine("Please enter the max value of any conruence modulus and the total amount of congruences in the system");
+            Console.WriteLine($"Please enter the max value of any conruence modulus and the total amount of congruences in the system, no bigger than {maxVal}");
         }
         static public void Results(List<int> a, List<int> n, Fraction prodN, Fraction sollution){
             if(prodN ==1){return;}
