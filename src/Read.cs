@@ -61,7 +61,7 @@ class Read
         var N = new List<int>();
         var ProdN = new BigInteger();
         ProdN = 1;
-        using (StreamReader sr = new StreamReader("CongruenceSystem.txt"))
+        using (StreamReader sr = new StreamReader(@"data\CongruenceSystem.txt"))
         {
             string[] values = new string[2];
             string line;

@@ -6,7 +6,7 @@ using System.Numerics;
 static public class MetaData{
     static public int PrimesUpperbound(){
         int maxVal = 0;
-        using (StreamReader sr = new StreamReader("Primes.txt"))
+        using (StreamReader sr = new StreamReader(@"data\Primes.txt"))
         {
             string line;
             while ((line = sr.ReadLine()) != null)

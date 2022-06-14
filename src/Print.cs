@@ -10,7 +10,7 @@ namespace KinesiskaRestsatsen{
 
         public static void PromptGenSpec(int maxVal){
             Console.Clear();
-            Console.WriteLine($"Please enter the max value of any conruence modulus and the total amount of congruences in the system, no bigger than {maxVal}");
+            Console.WriteLine($"Please enter the max value of any conruence modulus (no bigger than {maxVal}) and the total amount of congruences in the system");
         }
         static public void Results(List<int> a, List<int> n, Fraction prodN, Fraction sollution){
             if(prodN ==1){return;}
