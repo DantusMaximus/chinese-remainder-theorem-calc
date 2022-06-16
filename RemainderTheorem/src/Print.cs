@@ -21,14 +21,9 @@ namespace KinesiskaRestsatsen{
             }
             Console.WriteLine("Has the solutions:    x = " + sollution + " + n*" + prodN + "    n ∈ Z");
         }
-        public static void CouldNotGenerate(){
-            Console.WriteLine("There is not a sufficent ammount of primes less than or equal to the given max value for there to be such a congruence system");
-            System.Environment.Exit(1);
-        }
         
         public static void InvalidFileFormat(){
-            Console.WriteLine("Invalid format in file CongruenceSystem.txt");
-            System.Environment.Exit(1);
+            throw new System.Exception("Invalid format in file CongruenceSystem.txt");
         }
     }
 }

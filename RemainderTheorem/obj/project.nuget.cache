@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "QLhZ5OYkal+MCkGaJy5KHXJwaOrujkLphDzl/0PCKvc3/yhaK6k5n1iCB5RHlBTWK61Awpu1+KMiBkFOLlOHbA==",
+  "dgSpecHash": "du/ebE4UUZ8NTCmCrn5MlnCXPdQkFwu7YVGz06u8cFrHznAOlAJ6JYA+mJsXA6ghRNaqa77UFt4Bs9VWbk8hfg==",
   "success": true,
-  "projectFilePath": "c:\\Users\\leokr\\Documents\\Visual Studio Code\\FritidsProjekt\\chinese-remainder-theorem-calc\\RemainderTheorem\\KinesiskaRestsatsen.csproj",
+  "projectFilePath": "C:\\Users\\leokr\\Documents\\Visual Studio Code\\FritidsProjekt\\chinese-remainder-theorem-calc\\RemainderTheorem\\KinesiskaRestsatsen.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\leokr\\.nuget\\packages\\fractions\\7.0.0\\fractions.7.0.0.nupkg.sha512",
     "C:\\Users\\leokr\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\leokr\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",
     "C:\\Users\\leokr\\.nuget\\packages\\netstandard.library\\2.0.0\\netstandard.library.2.0.0.nupkg.sha512",
-    "C:\\Users\\leokr\\.nuget\\packages\\nunit\\3.13.3\\nunit.3.13.3.nupkg.sha512",
+    "C:\\Users\\leokr\\.nuget\\packages\\nunit\\3.12.0\\nunit.3.12.0.nupkg.sha512",
     "C:\\Users\\leokr\\.nuget\\packages\\system.globalization\\4.3.0\\system.globalization.4.3.0.nupkg.sha512",
     "C:\\Users\\leokr\\.nuget\\packages\\system.io\\4.3.0\\system.io.4.3.0.nupkg.sha512",
     "C:\\Users\\leokr\\.nuget\\packages\\system.reflection\\4.3.0\\system.reflection.4.3.0.nupkg.sha512",

@@ -9,7 +9,7 @@
       "KinesiskaRestsatsen/1.0.0": {
         "dependencies": {
           "Fractions": "7.0.0",
-          "NUnit": "3.13.3"
+          "NUnit": "3.12.0"
         },
         "runtime": {
           "KinesiskaRestsatsen.dll": {}
@@ -33,14 +33,14 @@
           "Microsoft.NETCore.Platforms": "1.1.0"
         }
       },
-      "NUnit/3.13.3": {
+      "NUnit/3.12.0": {
         "dependencies": {
           "NETStandard.Library": "2.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/nunit.framework.dll": {
-            "assemblyVersion": "3.13.3.0",
-            "fileVersion": "3.13.3.0"
+            "assemblyVersion": "3.12.0.0",
+            "fileVersion": "3.12.0.0"
           }
         }
       },
@@ -156,12 +156,12 @@
       "path": "netstandard.library/2.0.0",
       "hashPath": "netstandard.library.2.0.0.nupkg.sha512"
     },
-    "NUnit/3.13.3": {
+    "NUnit/3.12.0": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-KNPDpls6EfHwC3+nnA67fh5wpxeLb3VLFAfLxrug6JMYDLHH6InaQIWR7Sc3y75d/9IKzMksH/gi08W7XWbmnQ==",
-      "path": "nunit/3.13.3",
-      "hashPath": "nunit.3.13.3.nupkg.sha512"
+      "sha512": "sha512-3oJTrcUcT9wmweBUwgUf0f1XIYy6RZq2ziV+RM95HMKAJGsHPN2i3MKK1dAPvDPMRLz799Llj4eyu/STB9Q7OA==",
+      "path": "nunit/3.12.0",
+      "hashPath": "nunit.3.12.0.nupkg.sha512"
     },
     "System.Globalization/4.3.0": {
       "type": "package",

@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "mNlisIj8b4m0OPwBPoi6C9a0mVcdyw+pqKr9yhdSQu4gFgWN3/nYWrPbPTWUJzlzRt/8dxeBEic7E7Eu2DJofg==",
+  "dgSpecHash": "QfzdLBDyL8d+spzBsf4tpRoc8svAxtG9wK2nrDYjN6YTTpCjoIH2XsgArBlS5Zqbh6OD0597dY6D/zPV6y15JA==",
   "success": true,
   "projectFilePath": "c:\\Users\\leokr\\Documents\\Visual Studio Code\\FritidsProjekt\\chinese-remainder-theorem-calc\\Testing\\Testing.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\leokr\\.nuget\\packages\\fractions\\7.0.0\\fractions.7.0.0.nupkg.sha512",
     "C:\\Users\\leokr\\.nuget\\packages\\microsoft.codecoverage\\16.5.0\\microsoft.codecoverage.16.5.0.nupkg.sha512",
     "C:\\Users\\leokr\\.nuget\\packages\\microsoft.csharp\\4.0.1\\microsoft.csharp.4.0.1.nupkg.sha512",
     "C:\\Users\\leokr\\.nuget\\packages\\microsoft.dotnet.internalabstractions\\1.0.0\\microsoft.dotnet.internalabstractions.1.0.0.nupkg.sha512",
@@ -53,6 +54,7 @@
     "C:\\Users\\leokr\\.nuget\\packages\\system.runtime.handles\\4.3.0\\system.runtime.handles.4.3.0.nupkg.sha512",
     "C:\\Users\\leokr\\.nuget\\packages\\system.runtime.interopservices\\4.3.0\\system.runtime.interopservices.4.3.0.nupkg.sha512",
     "C:\\Users\\leokr\\.nuget\\packages\\system.runtime.interopservices.runtimeinformation\\4.3.0\\system.runtime.interopservices.runtimeinformation.4.3.0.nupkg.sha512",
+    "C:\\Users\\leokr\\.nuget\\packages\\system.runtime.numerics\\4.3.0\\system.runtime.numerics.4.3.0.nupkg.sha512",
     "C:\\Users\\leokr\\.nuget\\packages\\system.runtime.serialization.primitives\\4.1.1\\system.runtime.serialization.primitives.4.1.1.nupkg.sha512",
     "C:\\Users\\leokr\\.nuget\\packages\\system.text.encoding\\4.3.0\\system.text.encoding.4.3.0.nupkg.sha512",
     "C:\\Users\\leokr\\.nuget\\packages\\system.text.encoding.extensions\\4.3.0\\system.text.encoding.extensions.4.3.0.nupkg.sha512",

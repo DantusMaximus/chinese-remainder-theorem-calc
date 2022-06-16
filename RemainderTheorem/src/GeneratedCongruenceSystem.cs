@@ -64,7 +64,7 @@ namespace KinesiskaRestsatsen
             {
                 for (int i = 0; i < Congruences; i++)
             {
-                if(Math.primes[i]>MaxValue){ Print.CouldNotGenerate(); }
+                if(Math.primes[i]>MaxValue){ throw new System.Exception("There is not a sufficent ammount of primes less than or equal to the given max value for there to be such a congruence system"); }
                 ni = Math.primes[i];
                 ai = random.Next(2, MaxValue + 1);
                 A.Add(ai % ni);

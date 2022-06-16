@@ -97,3 +97,10 @@ c:\Users\leokr\Documents\Visual Studio Code\FritidsProjekt\chinese-remainder-the
 c:\Users\leokr\Documents\Visual Studio Code\FritidsProjekt\chinese-remainder-theorem-calc\Testing\obj\Debug\net5.0\ref\Testing.dll
 c:\Users\leokr\Documents\Visual Studio Code\FritidsProjekt\chinese-remainder-theorem-calc\Testing\obj\Debug\net5.0\Testing.pdb
 c:\Users\leokr\Documents\Visual Studio Code\FritidsProjekt\chinese-remainder-theorem-calc\Testing\obj\Debug\net5.0\Testing.genruntimeconfig.cache
+c:\Users\leokr\Documents\Visual Studio Code\FritidsProjekt\chinese-remainder-theorem-calc\Testing\bin\Debug\net5.0\KinesiskaRestsatsen.deps.json
+c:\Users\leokr\Documents\Visual Studio Code\FritidsProjekt\chinese-remainder-theorem-calc\Testing\bin\Debug\net5.0\KinesiskaRestsatsen.runtimeconfig.json
+c:\Users\leokr\Documents\Visual Studio Code\FritidsProjekt\chinese-remainder-theorem-calc\Testing\bin\Debug\net5.0\KinesiskaRestsatsen.runtimeconfig.dev.json
+c:\Users\leokr\Documents\Visual Studio Code\FritidsProjekt\chinese-remainder-theorem-calc\Testing\bin\Debug\net5.0\KinesiskaRestsatsen.exe
+c:\Users\leokr\Documents\Visual Studio Code\FritidsProjekt\chinese-remainder-theorem-calc\Testing\bin\Debug\net5.0\Fractions.dll
+c:\Users\leokr\Documents\Visual Studio Code\FritidsProjekt\chinese-remainder-theorem-calc\Testing\bin\Debug\net5.0\KinesiskaRestsatsen.dll
+c:\Users\leokr\Documents\Visual Studio Code\FritidsProjekt\chinese-remainder-theorem-calc\Testing\bin\Debug\net5.0\KinesiskaRestsatsen.pdb
