@@ -4,17 +4,18 @@ using System.Collections.Generic;
 using System.Numerics;
 namespace KinesiskaRestsatsen
 {
-    static public class Math
+    public class Math
     {
-        static public List<int> primes;
-        static Math()
+        public List<int> primes;
+        public Math(string root)
         {
             primes = new List<int>();
             try
             {
                 // Create an instance of StreamReader to read from a file.
                 // The using statement also closes the StreamReader.
-                using (StreamReader sr = new StreamReader(@"data\Primes.txt"))
+                Directory.SetCurrentDirectory(root);
+                using (StreamReader sr = new StreamReader(root + @"\RemainderTheorem\data\Primes.txt"))
                 {
                     string line;
                     // Read and display lines from the file until the end of
@@ -28,10 +29,10 @@ namespace KinesiskaRestsatsen
             catch (Exception e)
             {
                 // Let the user know what went wrong.
-                throw new SystemException(e.Message);
+                throw new SystemException("Couldn't find file, current file : " + Directory.GetCurrentDirectory());
             }
         }
-        public static int Phi(int num)
+        public int Phi(int num)
         {
             int phi = 0;
             for (int i = 1; i <= num; i++)
@@ -40,7 +41,7 @@ namespace KinesiskaRestsatsen
             }
             return phi;
         }
-        public static int GCD(int a, int b)
+        public int GCD(int a, int b)
         {
             int rest = b;
             if (b > a)
@@ -58,7 +59,7 @@ namespace KinesiskaRestsatsen
             }
             return 1;
         }
-        public static BigInteger PowMod(BigInteger b, BigInteger e, int ni){
+        public BigInteger PowMod(BigInteger b, BigInteger e, int ni){
             BigInteger result = 1;
             while(e > 0){
                 result *= b;

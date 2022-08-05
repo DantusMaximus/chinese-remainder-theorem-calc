@@ -8,13 +8,15 @@ namespace KinesiskaRestsatsen
         public int MaxValue { get; set; }
         public int Congruences { get; set; }
         public BigInteger ProdN { get; set; }
+        public BigInteger Answear { get; set; }
         public List<int> A { get; set; }
         public List<int> B { get; set; }
         public List<int> N { get; set; }
-        public GeneratedCongruenceSystem((int,int) args)
+        public GeneratedCongruenceSystem((int,int) args, string root)
         //A question that comes to mind when generating different congruence system are:
         //For any   n ∈ Z+  being the upperbound of each modulus in the reffered congruence systems, how many possible combinations of congruence systems is there?
         {
+            var math = new Math(root);
             this.MaxValue = args.Item1;
             this.Congruences = args.Item2;
             A = new List<int>();
@@ -51,7 +53,7 @@ namespace KinesiskaRestsatsen
             {
                 foreach (int ni in N)
                 {
-                    if (Math.GCD(ni, temp) != 1)
+                    if (math.GCD(ni, temp) != 1)
                     {
                         return false;
                     }
@@ -64,8 +66,8 @@ namespace KinesiskaRestsatsen
             {
                 for (int i = 0; i < Congruences; i++)
             {
-                if(Math.primes[i]>MaxValue){ throw new System.Exception("There is not a sufficent ammount of primes less than or equal to the given max value for there to be such a congruence system"); }
-                ni = Math.primes[i];
+                if(math.primes[i]>MaxValue){ throw new System.Exception("There is not a sufficent ammount of primes less than or equal to the given max value for there to be such a congruence system"); }
+                ni = math.primes[i];
                 ai = random.Next(2, MaxValue + 1);
                 A.Add(ai % ni);
                 N.Add(ni);

@@ -1,17 +1,19 @@
 using System.Collections.Generic;
 using System.Numerics;
 namespace KinesiskaRestsatsen{
-    interface ICongruenceSystem{
+    public interface ICongruenceSystem{
         int Congruences { get; set; }
         BigInteger ProdN { get; set; }
+        BigInteger Answear { get; set; }
         List<int> A { get; set;}
         List<int> B { get; set;}
         List<int> N { get; set;}
-        void SolveCongruenceSystem()
+        BigInteger SolveCongruenceSystem(string root)
         {
             // om bi(n/ni) ≡ 1 (mod ni) får vi en lösning när vi multiplicerar med ai, vilket ger oss
             // bi ≡ (n/ni)^(phi.Phi(ni)-1) (mod ni)         ty         bi ≡ (n/ni)^-1 (mod ni)          och         (n/ni)^(phi.Phi(ni)) ≡ 1 (mod ni)
             var bFactors = new List<BigInteger>();
+            var math = new Math(root);
             BigInteger b = 0;
             BigInteger e = 0;
             //Decides sollutions bi for each congruence
@@ -19,7 +21,7 @@ namespace KinesiskaRestsatsen{
             {
                 bFactors.Clear();
                 b = ProdN / N[i];
-                e = Math.Phi(N[i]) - 1;
+                e = math.Phi(N[i]) - 1;
                 while (e > 1)
                 {
                      Reduce(ref b, ref e, N[i]);
@@ -40,8 +42,8 @@ namespace KinesiskaRestsatsen{
                 answear %= ProdN;
             }
             if(answear < 0){ answear += ProdN;}
-            Print.Results(A, N, ProdN, answear);
-            
+            Answear = answear;
+            return answear;
             void Reduce(ref BigInteger b, ref BigInteger e, int ni)
             {
                 b %= ni;
@@ -52,7 +54,7 @@ namespace KinesiskaRestsatsen{
                 }
                 if (e >= 2)
                 {
-                    bFactors.Add((Math.PowMod(b, e / 2, ni)) % ni);
+                    bFactors.Add((math.PowMod(b, e / 2, ni)) % ni);
                     e /= 2;
                 }
             }

@@ -6,7 +6,7 @@ using System.Numerics;
 
 class Read
 {
-    public static ICongruenceSystem CoungruenceSystem()
+    public static ICongruenceSystem CoungruenceSystem(string root)
     {
         string userInput;
         do
@@ -17,16 +17,16 @@ class Read
         while (!Read.ValidBit(userInput));
         switch (userInput)
         {
-            case "0": return new InputCongurenceSystem(ArgumentsFromFile());
-            case "1": return new GeneratedCongruenceSystem(GenerationArguments());
+            case "0": return new InputCongurenceSystem(ArgumentsFromFile(root));
+            case "1": return new GeneratedCongruenceSystem(GenerationArguments(root), root);
             default: throw new NotImplementedException();
         }
     }
 
-    public static (int, int) GenerationArguments()
+    public static (int, int) GenerationArguments(string root)
     {
         string maxVal, congCount;
-        int biggestPrime = MetaData.PrimesUpperbound();
+        int biggestPrime = MetaData.PrimesUpperbound(root);
         //int biggestPrime = MetaData.PrimesUpperbound();
         do
         {
@@ -54,14 +54,15 @@ class Read
         return false;
     }
 
-    public static (List<int>, List<int>, List<int>, BigInteger) ArgumentsFromFile()
+    public static (List<int>, List<int>, List<int>, BigInteger) ArgumentsFromFile(string root)
     {
         var A = new List<int>();
         var B = new List<int>();
         var N = new List<int>();
         var ProdN = new BigInteger();
         ProdN = 1;
-        using (StreamReader sr = new StreamReader(@"data\CongruenceSystem.txt"))
+        Directory.SetCurrentDirectory(root);
+        using (StreamReader sr = new StreamReader(root + @"\RemainderTheorem\data\CongruenceSystem.txt"))
         {
             string[] values = new string[2];
             string line;

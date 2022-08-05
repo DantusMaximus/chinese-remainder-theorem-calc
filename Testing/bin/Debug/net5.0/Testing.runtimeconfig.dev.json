@@ -1,8 +1,8 @@
 {
   "runtimeOptions": {
     "additionalProbingPaths": [
-      "C:\\Users\\leokr\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\leokr\\.nuget\\packages"
+      "C:\\Users\\dante\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\dante\\.nuget\\packages"
     ]
   }
 }

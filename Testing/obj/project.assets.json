@@ -4746,34 +4746,32 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\leokr\\.nuget\\packages\\": {}
+    "C:\\Users\\dante\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\leokr\\Documents\\Visual Studio Code\\FritidsProjekt\\chinese-remainder-theorem-calc\\Testing\\Testing.csproj",
+      "projectUniqueName": "C:\\Users\\dante\\OneDrive\\Dokument\\VSCode\\chinese-remainder-theorem-calc\\Testing\\Testing.csproj",
       "projectName": "Testing",
-      "projectPath": "c:\\Users\\leokr\\Documents\\Visual Studio Code\\FritidsProjekt\\chinese-remainder-theorem-calc\\Testing\\Testing.csproj",
-      "packagesPath": "C:\\Users\\leokr\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\leokr\\Documents\\Visual Studio Code\\FritidsProjekt\\chinese-remainder-theorem-calc\\Testing\\obj\\",
+      "projectPath": "C:\\Users\\dante\\OneDrive\\Dokument\\VSCode\\chinese-remainder-theorem-calc\\Testing\\Testing.csproj",
+      "packagesPath": "C:\\Users\\dante\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dante\\OneDrive\\Dokument\\VSCode\\chinese-remainder-theorem-calc\\Testing\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\leokr\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Users\\dante\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net5.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "c:\\Users\\leokr\\Documents\\Visual Studio Code\\FritidsProjekt\\chinese-remainder-theorem-calc\\RemainderTheorem\\KinesiskaRestsatsen.csproj": {
-              "projectPath": "c:\\Users\\leokr\\Documents\\Visual Studio Code\\FritidsProjekt\\chinese-remainder-theorem-calc\\RemainderTheorem\\KinesiskaRestsatsen.csproj"
+            "C:\\Users\\dante\\OneDrive\\Dokument\\VSCode\\chinese-remainder-theorem-calc\\RemainderTheorem\\KinesiskaRestsatsen.csproj": {
+              "projectPath": "C:\\Users\\dante\\OneDrive\\Dokument\\VSCode\\chinese-remainder-theorem-calc\\RemainderTheorem\\KinesiskaRestsatsen.csproj"
             }
           }
         }
@@ -4816,7 +4814,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.400\\RuntimeIdentifierGraph.json"
       }
     }
   }

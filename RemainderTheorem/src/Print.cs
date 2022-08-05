@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Fractions;
+using System.Numerics;
 namespace KinesiskaRestsatsen{
     static class Print{
         static public void PromptCongSysSpec(){
@@ -12,7 +12,7 @@ namespace KinesiskaRestsatsen{
             Console.Clear();
             Console.WriteLine($"Please enter the max value of any conruence modulus (no bigger than {maxVal}) and the total amount of congruences in the system");
         }
-        static public void Results(List<int> a, List<int> n, Fraction prodN, Fraction sollution){
+        static public void Results(List<int> a, List<int> n, BigInteger prodN, BigInteger sollution){
             if(prodN ==1){return;}
             Console.Clear();
             Console.WriteLine("The Congruence System");
